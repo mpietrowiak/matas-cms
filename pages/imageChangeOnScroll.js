@@ -1,63 +1,62 @@
 import React from 'react';
-import ImageToggleOnMouseOver from '../src/ImageToggleOnMouseOver';
+import ImageToggleOnScroll from '../src/ImageToggleOnScroll';
 
-const ImageChangeOnMouseOver = () => {
-  console.log('rendering img....');
+const Page = () => {
   return (
     <div>
-      <ImageToggleOnMouseOver primaryImg="/static/1a.jpg" 
+      <ImageToggleOnScroll primaryImg="/static/1a.jpg" 
                               secondaryImg="/static/1b.jpg"
                               alt="" width="300" />
       <br />
-      <ImageToggleOnMouseOver primaryImg="/static/2a.jpg" 
+      <ImageToggleOnScroll primaryImg="/static/2a.jpg" 
                               secondaryImg="/static/2b.jpg"
                               alt="" width="300" />
       <br />
-      <ImageToggleOnMouseOver primaryImg="/static/1a.jpg" 
+      <ImageToggleOnScroll primaryImg="/static/1a.jpg" 
                               secondaryImg="/static/1b.jpg"
                               alt="" width="300" />
       <br />
-      <ImageToggleOnMouseOver primaryImg="/static/2a.jpg" 
+      <ImageToggleOnScroll primaryImg="/static/2a.jpg" 
                               secondaryImg="/static/2b.jpg"
                               alt="" width="300" />
       <br />
-      <ImageToggleOnMouseOver primaryImg="/static/1a.jpg" 
+      <ImageToggleOnScroll primaryImg="/static/1a.jpg" 
                               secondaryImg="/static/1b.jpg"
                               alt="" width="300" />
       <br />
-      <ImageToggleOnMouseOver primaryImg="/static/2a.jpg" 
+      <ImageToggleOnScroll primaryImg="/static/2a.jpg" 
                               secondaryImg="/static/2b.jpg"
                               alt="" width="300" />
       <br />
-      <ImageToggleOnMouseOver primaryImg="/static/1a.jpg" 
+      <ImageToggleOnScroll primaryImg="/static/1a.jpg" 
                               secondaryImg="/static/1b.jpg"
                               alt="" width="300" />
       <br />
-      <ImageToggleOnMouseOver primaryImg="/static/2a.jpg" 
+      <ImageToggleOnScroll primaryImg="/static/2a.jpg" 
                               secondaryImg="/static/2b.jpg"
                               alt="" width="300" />
       <br />
-      <ImageToggleOnMouseOver primaryImg="/static/1a.jpg" 
+      <ImageToggleOnScroll primaryImg="/static/1a.jpg" 
                               secondaryImg="/static/1b.jpg"
                               alt="" width="300" />
       <br />
-      <ImageToggleOnMouseOver primaryImg="/static/2a.jpg" 
+      <ImageToggleOnScroll primaryImg="/static/2a.jpg" 
                               secondaryImg="/static/2b.jpg"
                               alt="" width="300" />
       <br />
-      <ImageToggleOnMouseOver primaryImg="/static/1a.jpg" 
+      <ImageToggleOnScroll primaryImg="/static/1a.jpg" 
                               secondaryImg="/static/1b.jpg"
                               alt="" width="300" />
       <br />
-      <ImageToggleOnMouseOver primaryImg="/static/2a.jpg" 
+      <ImageToggleOnScroll primaryImg="/static/2a.jpg" 
                               secondaryImg="/static/2b.jpg"
                               alt="" width="300" />
       <br />
-      <ImageToggleOnMouseOver primaryImg="/static/1a.jpg" 
+      <ImageToggleOnScroll primaryImg="/static/1a.jpg" 
                               secondaryImg="/static/1b.jpg"
                               alt="" width="300" />
       <br />
-      <ImageToggleOnMouseOver primaryImg="/static/2a.jpg" 
+      <ImageToggleOnScroll primaryImg="/static/2a.jpg" 
                               secondaryImg="/static/2b.jpg"
                               alt="" width="300" />
       <br />
@@ -65,4 +64,4 @@ const ImageChangeOnMouseOver = () => {
   );
 }
 
-export default ImageChangeOnMouseOver;
+export default Page;

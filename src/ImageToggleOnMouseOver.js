@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 
 const ImageChangeOnMouseOver = ({ primaryImg, secondaryImg }) => {
   const imageRef = useRef(null);
+  console.log('rendering img component...');
   return (
     <img onMouseOver={() => {
       imageRef.current.src = secondaryImg;
