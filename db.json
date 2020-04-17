@@ -1,0 +1,39 @@
+{
+  "transactions": [],
+  "users": [
+    {
+      "id": 1,
+      "first_name": "Anna",
+      "last_name": "Kowalska",
+      "age": 34
+    },
+    {
+      "id": 2,
+      "first_name": "Piotr",
+      "last_name": "Nowak",
+      "age": 28
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "Mój pierwszy post",
+      "content": "Treść posta pierwszego..."
+    },
+    {
+      "id": 2,
+      "title": "Mój drugi post",
+      "content": "Treść posta drugiego..."
+    }
+  ],
+  "todos": [
+    {
+      "id": 1,
+      "content": "Pierwszy todos"
+    },
+    {
+      "id": 2,
+      "content": "Drugi todos"
+    }
+  ]
+}
