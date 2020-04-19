@@ -4,16 +4,16 @@ function DataTable ({ columns, data, className }) {
     <table className={className}>
       <thead>
         <tr>
-        {cols.map(column => (
-          <th>{column.title}</th>
+        {cols.map((column, index) => (
+          <th key={index}>{column.title}</th>
         ))}
         </tr>
       </thead>
       <tbody>
-        {data.map(item => (
-          <tr>
-            {columns.map(column => (
-              <td>{item[column.name]}</td>
+        {data.map((item, index) => (
+          <tr key={index}>
+            {columns.map((column, index) => (
+              <td key={index}>{item[column.name]}</td>
             ))}
             <td>
               <a href="#">Edytuj</a> &nbsp;

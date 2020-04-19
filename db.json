@@ -29,11 +29,19 @@
   "todos": [
     {
       "id": 1,
-      "content": "Pierwszy todos"
+      "content": "Zrobić CMS na /cms"
     },
     {
       "id": 2,
-      "content": "Drugi todos"
+      "content": "Zrobić stronę główną z newsami"
+    },
+    {
+      "id": 3,
+      "content": "Zrobić jakieś logowanie do CMS - frontend"
+    },
+    {
+      "id": 4,
+      "content": "Zrobić renderowanie markdown"
     }
   ]
 }
