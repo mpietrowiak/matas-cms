@@ -1,17 +1,23 @@
-const authMiddleware = require('./authMiddleware');
+const { parse } = require('url');
+
+const express = require('express');
+const next = require('next');
 const jsonServer = require('json-server')
-const server = jsonServer.create()
-const router = jsonServer.router('db.json')
-const middlewares = jsonServer.defaults()
-const bodyParser = require('body-parser')
-const cors = require('cors')
 
-server.use(cors())
-server.use(bodyParser.json());
-server.use(authMiddleware);
-server.use(middlewares);
-server.use(router);
+const expressApp = express();
 
-server.listen(8000, () => {
-  console.log('JSON Server is running')
-})
+const nextApp = next({ dev: true });
+const nextHandle = nextApp.getRequestHandler();
+
+const handleRootRequest = (req, res, next) => {
+  const parsedUrl = parse(req.url, true);
+  const { pathname, query } = parsedUrl;
+  nextHandle(req, res, parsedUrl);
+};
+
+nextApp.prepare().then(() => {
+  expressApp.use('/api', jsonServer.router('db.json'));
+  expressApp.use('/', handleRootRequest);
+  expressApp.listen(3000);
+});
+

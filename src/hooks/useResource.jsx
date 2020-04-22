@@ -3,7 +3,7 @@ import axios from 'axios';
 
 function useResource(resource) {
   const [items, setItems] = useState([]);
-  const resUrl = `http://localhost:8000/${resource}`;
+  const resUrl = `/api/${resource}`;
 
   const deleteItem = async (item) => {
     setItems(items.filter(tx => tx.id !== item.id));
